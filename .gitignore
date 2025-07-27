@@ -14,27 +14,26 @@ frontend/dist/
 admin/build
 admin/dist
 backend/dist/
-
-# Logs
+# Log files
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS-specific
+# OS system files
 .DS_Store
 Thumbs.db
 
-# IDE folders
+# IDEs/editors
 .vscode/
 .idea/
 
-# Cache and temp
+# Cache/temp
 *.cache/
 *.tmp/
+admin/.parcel-cache/
 frontend/.parcel-cache/
-admin/.parcel-cache
 backend/.parcel-cache/
 
-# Optional: ignore coverage reports
+# Coverage reports (optional)
 coverage/
