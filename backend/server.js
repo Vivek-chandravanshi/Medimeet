@@ -21,7 +21,16 @@ connectCloudinary()
 app.use(express.json()); // for JSON body
 app.use(express.urlencoded({ extended: true })); // for form data
 
-app.use(cors())
+//app.use(cors())
+app.use(cors({
+  origin: [
+    'https://medimeet-frontend-vi.onrender.com',
+    'https://medimeet-admin-vi.onrender.com'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 
 //api endpoints
 app.use('/api/admin', adminRouter)
