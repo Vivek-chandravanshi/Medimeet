@@ -151,7 +151,7 @@ const appointmentCancel = async(req, res)=>{
 
 const doctorDashboard = async(req, res)=>{
     try{
-        const {docId} = req.docId;
+        const docId = req.docId;
         const appointments = await appointmentModel.find({ docId })
         let earnings = 0
         appointments.map((item)=>{
